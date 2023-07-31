@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Carrito de Compras</title>
+</head>
+<body>
+  <h1>Tienda Online</h1>
+  <div id="products">
+    <h2>Productos Disponibles</h2>
+    <ul>
+      <li>White T-Shirt - $1200 - Cantidad: 5 <button onclick="addToCart('White T-Shirt', 1200)">Agregar al Carrito</button></li>
+      <li>Black T-Shirt - $2000 - Cantidad: 3 <button onclick="addToCart('Black T-Shirt', 2000)">Agregar al Carrito</button></li>
+      <li>Red T-Shirt - $1500 - Cantidad: 7 <button onclick="addToCart('Red T-Shirt', 1500)">Agregar al Carrito</button></li>
+    </ul>
+  </div>
+  <div id="cart">
+    <h2>Carrito de Compras</h2>
+    <ul id="cart-list">
+    </ul>
+    <p>Total: $<span id="total">0</span></p>
+    <button onclick="clearCart()">Vaciar Carrito</button>
+  </div>
+
+  <script src="carrito.js"></script>
+</body>
+</html>
